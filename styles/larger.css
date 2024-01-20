@@ -1,0 +1,26 @@
+
+@media (min-width: 768px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 15px; 
+    }
+
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learning-activities {
+        border: 2px;
+    }
+
+    .information {
+        background-color: blue;
+    }
+}

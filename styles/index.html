@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Eddie] - WDD 230 - Web Frontend Development</title>
+    <meta name="WDD 230 - Web Frontend Development" content="course assignment portal">
+    <meta name="author" content="[Edidiong-ukpong]">
+</head>
+<body>
+    <header>
+
+        <img src="/styles/eddie.jpeg" alt="my profile picture" height="300" width="250">
+
+        <span>Eddie</span>
+    </header>
+
+    <nav>
+        <a href="home"></a>
+        <a href="chamber"></a>
+        <a href="siteplan"></a>
+        <a href="form"></a>
+
+    </nav>
+
+    <main>
+        <h1>"WDD 230: Web Frontend Development"</h1>
+
+        <section class="card">
+
+            <h2>"Learning Activities"</h2>
+
+            <ul>
+                <li><a href="">learning activity</a></li>
+                <li><a href="">learning activity</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            
+            <p>Weather: [30%]</p>
+
+            <p>Number of Visits: [213]</p>
+        
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; [2024] [Eddie] [akwa ibom state].</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        
+function setCopyrightYear() {
+    var year = new Date().getFullYear();
+    document.getElementById('copyrightYear').textContent = year;
+}
+
+function setLastModifiedDate() {
+    var lastModified = document.lastModified;
+    document.getElementById('lastModified').textContent = "Last Modified: " + lastModified;
+}
+
+window.onload = function () {
+    setCopyrightYear();
+    setLastModifiedDate();
+};
+
+    </script>
+</body>
+</html>
